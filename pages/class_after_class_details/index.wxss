@@ -1,0 +1,4 @@
+/* pages/class_after_class_details/index.wxss */
+.ater_content {
+  padding: 32rpx;
+}

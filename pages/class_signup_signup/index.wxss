@@ -1,0 +1,66 @@
+/* pages/class_signup_signup/index.wxss */
+.contentlist {
+  background-color: #ffffff;
+  padding: 0 30rpx;
+  margin-top: 20rpx;
+}
+
+.contentlist .center {
+  padding-top: 35rpx;
+}
+
+.contentlist .week {
+  border-left: 8rpx solid #009BFD;
+  color: #009BFD;
+  font-size: 32rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  padding-left: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.w_time {
+  height: 100rpx;
+  background-color: rgba(0, 155, 253, .05);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 30rpx;
+  color: rgba(0, 155, 253, 1);
+  font-size: 28rpx;
+}
+
+.tierimg {
+  width: 28rpx;
+  margin-right: 20rpx;
+}
+
+.wli {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+
+.wli .name {
+  color: rgba(26, 29, 30, 1);
+  font-size: 28rpx;
+  width: 80rpx;
+}
+
+.wli .num {
+  color: rgba(140, 141, 142, 1);
+  font-size: 26rpx;
+}
+
+.wli .baom {
+  width: 112rpx;
+  height: 56rpx;
+}
+
+.wli .num {
+  flex: 1;
+}
+
+.main {
+  padding-bottom: 154rpx;
+}

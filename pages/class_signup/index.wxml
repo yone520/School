@@ -1,0 +1,25 @@
+<!--pages/class_processtobe/index.wxml-->
+<view class="top1content">
+  <view class="top1 border-b">
+    <image mode="widthFix" src="/images/icon/fanka.png"></image>
+    <view class="t1">待报名</view>
+    <view class="t2">班级课程已确认，请您在9月10日前完成报名</view>
+    <view class="cz angular" bindtap="toSignup">
+      立即报名
+    </view>
+  </view>
+</view>
+<view class="colmn">
+  <view class="list">
+    <text>学校名称</text>
+    <text>绵阳实验小学</text>
+  </view>
+  <view class="list">
+    <text>学生姓名</text>
+    <text>爱德维斯</text>
+  </view>
+  <view class="list">
+    <text>申请课程</text>
+    <text>羽毛球，篮球</text>
+  </view>
+</view>

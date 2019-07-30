@@ -1,0 +1,36 @@
+/* pages/my_info_add/index.wxss */
+.angular {
+  box-shadow: 0 10rpx 10rpx 3rpx rgba(0, 155, 253, .2);
+  margin-top: 60rpx;
+}
+
+.bindingcontent {
+  padding: 0 32rpx;
+  background-color: #ffffff;
+}
+
+.bindlist {
+  height: 100rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 32rpx;
+  color: #484A4B;
+  position: relative;
+}
+
+.bindlist text {
+  width: 179rpx;
+}
+
+.bindlist input {
+  flex: 1;
+}
+
+.selecting {
+  width: 26rpx;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -12rpx;
+}

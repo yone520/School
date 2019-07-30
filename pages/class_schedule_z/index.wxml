@@ -1,0 +1,81 @@
+ <view class="top1bgc" style="background: #FAFAFA">
+  <view class="datachange border-b">
+    <view class="t1">{{month}}月</view>
+    <view class="t2">第{{week}}周</view>
+    <view class="t3">
+      <view bindtap="backToday">今</view>
+    </view>
+    <view class="t4">
+      <view bindtap="toViewDay">日视图</view>
+      <view class="active">周视图</view>
+    </view>
+  </view>
+ </view>
+  <view class="classtable" style="background: #FAFAFA">
+    <swiper indicator-dots="{{indicatorDots}}"
+      interval="{{interval}}" 
+      duration="{{duration}}"
+      wx:if="{{dataArr.length}}"
+      circular="{{true}}"
+      bindchange="swiperchange"
+      current="{{thiscurrent}}">
+      <block wx:for="{{dataArr}}" wx:key="index">
+        <swiper-item>
+          <view class="itemlist">
+            <text style="color: #fff">一</text>
+            <view class="nsdjsd" wx:for="{{item}}" wx:for-item="citem" wx:for-index="ind" wx:key="ind">
+                <view class="tit">{{citem.text}}</view>
+                <view data-time="{{citem.time}}" 
+                      data-index="{{index}}"
+                      data-ind="{{ind}}"
+                      class="andby {{citem.isClick ? 'aaaa' : ''}} {{(citem.time == thisday && citem.isClick) ? 'current' : ''}}">{{citem.showTime}}</view>
+              </view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- 列表 -->
+  <view class="zhoulist">
+    <view class="zhouli">
+      <text>一</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+    </view>
+    <view class="zhouli">
+      <text>一</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+    </view>
+    <view class="zhouli">
+      <text>一</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+    </view>
+    <view class="zhouli">
+      <text>一</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+      <text>数学</text>
+    </view>
+  </view>

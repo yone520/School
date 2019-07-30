@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/class_after_class_details/index",
+    "pages/my_info/index",
+    "pages/my/index",
+    "pages/class_schedule_z/index",
+    "pages/class_schedule/index",
+    "pages/login/index",
+    "pages/getphone/index",
+    "pages/class/index",
+    "pages/class_applyfor/index",
+    "pages/class_after_class_service/index",
+    "pages/class_teacher/index",
+    "pages/class_my_evaluation/index",
+    "pages/class_evaluation/index",
+    "pages/class_signup_success/index",
+    "pages/class_signup_signup/index",
+    "pages/class_signup/index",
+    "pages/class_processtobe/index",
+    "pages/class_ofthe/index",
+    "pages/my_help_center/index",
+    "pages/my_feedback_details/index",
+    "pages/my_feedback/index",
+    "pages/my_bill_details/index",
+    "pages/my_bill/index",
+    "pages/my_userinfo_username/index",
+    "pages/my_userinfo/index",
+    "pages/my_info_add/index",
+    "pages/index_details/index"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于匹配附近的小伙伴"
+    }
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#2CACFD",
+    "borderStyle": "black",
+    "color": "#C5C6C7",
+    "list": [
+      {
+        "iconPath": "images/icon/tabbar/index.png",
+        "selectedIconPath": "images/icon/tabbar/indexs.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/icon/tabbar/class.png",
+        "selectedIconPath": "images/icon/tabbar/classs.png",
+        "pagePath": "pages/class/index",
+        "text": "班级"
+      },
+      {
+        "iconPath": "images/icon/tabbar/my.png",
+        "selectedIconPath": "images/icon/tabbar/mys.png",
+        "pagePath": "pages/my/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom",
+    "no-data": "/components/nodata/index"
+  },
+  "networkTimeout": {
+    "request": 18000
+  },
+  "sitemapLocation": "sitemap.json"
+}

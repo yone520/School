@@ -1,0 +1,280 @@
+/* 主色调 */
+.c1 {
+  color: #009bfd;
+}
+
+.c1Bg {
+  background: #009bfd;
+}
+
+/* 辅助色，特色标记色 */
+.c2 {
+  color: #fdbf00;
+}
+
+.c2Bg {
+  background: #fdbf00;
+}
+
+/* 订单金额 */
+.c3 {
+  color: #FD1800;
+}
+
+.c3Bg {
+  background: #FD1800;
+}
+
+/* 标题栏，主要信息 */
+.c4 {
+  color: #1A1D1E;
+}
+
+.c4Bg {
+  background: #1A1D1E;
+}
+
+/* 次要信息 */
+.c5 {
+  color: #484A4B;
+}
+
+.c5Bg {
+  background: #484A4B;
+}
+
+/* 辅助信息 */
+.c6 {
+  color: #8C8D8E;
+}
+
+.c6Bg {
+  background: #8C8D8E;
+}
+
+/* 分割线 */
+.c7 {
+  color: #DDDEDE;
+}
+
+.c7Bg {
+  background: #DDDEDE;
+}
+
+/* 背景色 */
+.c8 {
+  color: #F2F2F2;
+}
+
+.c8Bg {
+  background: #F2F2F2;
+}
+
+.fc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.czz {
+  width: 670rpx;
+  height: 94rpx;
+  background-color: rgba(0, 155, 253, 1);
+  border-radius: 100rpx;
+  text-align: center;
+  line-height: 94rpx;
+  color: rgba(255, 255, 255, .6);
+  font-size: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.czz image {
+  width: 55rpx;
+  position: relative;
+  top: -2rpx
+}
+
+.czz image:last-child {
+  opacity: 0;
+}
+
+.czz text {
+  margin: 0 12rpx;
+}
+
+.cz {
+  width: 670rpx;
+  height: 94rpx;
+  background-color: rgba(0, 155, 253, 1);
+  border-radius: 100rpx;
+  text-align: center;
+  line-height: 94rpx;
+  color: rgba(255, 255, 255, 1);
+  font-size: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.dis {
+  width: 670rpx;
+  height: 94rpx;
+  background-color: rgba(0, 155, 253, .6);
+  border-radius: 100rpx;
+  color: rgba(255, 255, 255, 1);
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 94rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  margin: 0 auto;
+}
+
+.b1_1 {
+  width: 120rpx;
+  height: 60rpx;
+  background-color: rgba(0, 155, 253, 1);
+  border-radius: 50rpx;
+  color: rgba(255, 255, 255, 1);
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.b1_2 {
+  width: 120rpx;
+  height: 60rpx;
+  background-color: #008BE3;
+  border-radius: 50rpx;
+  color: rgba(255, 255, 255, .6);
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.b1_3 {
+  width: 120rpx;
+  height: 60rpx;
+  background-color: rgba(0, 155, 253, .6);
+  border-radius: 100rpx;
+  color: rgba(255, 255, 255, 1);
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 94rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+}
+
+.b2_1 {
+  width: 120rpx;
+  height: 60rpx;
+  border: 1rpx solid rgba(5, 5, 5, 0.1);
+  background-color: rgba(248, 248, 248, 1);
+  border-radius: 50rpx;
+  color: rgba(53, 53, 53, 1);
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.b2_2 {
+  width: 120rpx;
+  height: 60rpx;
+  border: 1rpx solid rgba(5, 5, 5, 0.1);
+  background-color: #DEDEDE;
+  border-radius: 50rpx;
+  color: rgba(53, 53, 53, .6);
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.b2_3 {
+  width: 120rpx;
+  height: 60rpx;
+  border: 1rpx solid rgba(5, 5, 5, 0.1);
+  background-color: #FBFBFB;
+  border-radius: 50rpx;
+  color: rgba(53, 53, 53, .3);
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.b3_1 {
+  width: 120rpx;
+  height: 60rpx;
+  border: 1rpx solid rgba(0, 155, 253, 1);
+  background-color: #ffffff;
+  border-radius: 50rpx;
+  color: rgba(0, 155, 253, 1);
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.b3_2 {
+  width: 120rpx;
+  height: 60rpx;
+  border: 1rpx solid #78CAFE;
+  background-color: #ffffff;
+  border-radius: 50rpx;
+  color: #78CAFE;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.b3_3 {
+  width: 120rpx;
+  height: 60rpx;
+  border: 1rpx solid #E7E7E7;
+  background-color: #ffffff;
+  border-radius: 50rpx;
+  color: #E7E7E7;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.border-b {
+  position: relative;
+}
+
+.border-b:after {
+  position: absolute; 
+  content: '';
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #e3e5e9;
+  -webkit-transform: scale(1, 0.5);
+  transform: scale(1, 0.5);
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.angular {
+  box-shadow: 0 10rpx 10rpx 3rpx rgba(0, 155, 253, .2);
+}
+
+.submit_sq {
+  position: fixed;
+  width: 100%;
+  height: 134rpx;
+  background-color: #ffffff;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

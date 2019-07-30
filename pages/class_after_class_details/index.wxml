@@ -1,0 +1,8 @@
+<!--pages/class_after_class_details/index.wxml-->
+<view class="ater_content">
+  <rich-text nodes="{{detObject.introduce}}"></rich-text>
+</view>
+
+<view class="submit_sq">
+  <view class="cz angular" bindtap="jiaofei">立即缴费</view>
+</view>

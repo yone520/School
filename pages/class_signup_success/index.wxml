@@ -1,0 +1,73 @@
+<!--pages/class_signup_success/index.wxml-->
+<view class="top1content">
+  <view class="top1 border-b">
+    <image mode="widthFix" src="/images/icon/success.png"></image>
+    <view class="t1">报名成功</view>
+    <view class="t2">恭喜您报名成功，您可以随时对课后服务进行评价哦</view>
+  </view>
+</view>
+
+<view class="colmn lanmuss">
+  <view class="list">
+    <text>学校名称</text>
+    <text>绵阳实验小学</text>
+  </view>
+  <view class="list">
+    <text>学生姓名</text>
+    <text>爱德维斯</text>
+  </view>
+</view>
+
+<view class="lanmu">
+  <view class="colmn">
+    <view class="list">
+      <text>班级名称</text>
+      <text>篮球A班</text>
+    </view>
+    <view class="list">
+      <text>课程内容</text>
+      <text>篮球</text>
+    </view>
+    <view class="list">
+      <text>任课教师</text>
+      <text>爱德华</text>
+    </view>
+    <view class="list">
+      <text>上课时间</text>
+      <text>每周三 15:30-18:00</text>
+    </view>
+  </view>
+  <view class="line border-b"></view>
+  <view class="pingjia">
+    <view class="b3_1" bindtap="pingjia">
+      评价
+    </view>
+  </view>
+</view>
+
+<view class="lanmu">
+  <view class="colmn">
+    <view class="list">
+      <text>班级名称</text>
+      <text>篮球A班</text>
+    </view>
+    <view class="list">
+      <text>课程内容</text>
+      <text>篮球</text>
+    </view>
+    <view class="list">
+      <text>任课教师</text>
+      <text>爱德华</text>
+    </view>
+    <view class="list">
+      <text>上课时间</text>
+      <text>每周三 15:30-18:00</text>
+    </view>
+  </view>
+  <view class="line border-b"></view>
+  <view class="pingjia">
+    <view class="b3_1">
+      评价
+    </view>
+  </view>
+</view>

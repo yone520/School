@@ -1,0 +1,46 @@
+<view class="top1">
+  <view class="kecmc border-b">足球课-张雪峰老师</view>
+  <view class="pjial">
+    <view class="andj">您对教师满意吗？</view>
+    <view class="xinghao">
+      <image wx:for="{{teacher}}" 
+              mode="widthFix" 
+              data-mark="{{0}}"
+              data-index="{{index}}"
+              wx:key="{{index}}"
+              src="/images/icon/{{item ? 'liangxinghao' : 'xinghao'}}.png"></image>
+      <text>{{teacherText[teacherIndex]}}</text>
+    </view>
+    <view class="andj">您对课程内容满意吗？</view>
+    <view class="xinghao">
+      <image wx:for="{{course}}" 
+              mode="widthFix" 
+              data-mark="{{1}}"
+              data-index="{{index}}"
+              wx:key="{{index}}"
+              src="/images/icon/{{item ? 'liangxinghao' : 'xinghao'}}.png"></image>
+      <text>{{courseText[courseIndex]}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="comtent">
+  <view class="comtext">老师挺不错的，课程也很好，赞一个！老师挺不错的，课程也很好，赞一个！老师挺不错的，课程也很好，赞一个！</view>
+  <view class="comimglist">
+    <view class="list">
+      <image src="https://b248.photo.store.qq.com/psb?/V14ATi4j2xjlTs/c5KZAeQZIr1dc8j*7fycSmp.JmZocOix3Tmt8R3z*gU!/b/dOB12ZP5DwAA&bo=gAJZA3sEAAYBCI4!&rf=viewer_4" mode="aspectFill"></image>
+    </view>
+    <view class="list">
+      <image src="https://b248.photo.store.qq.com/psb?/V14ATi4j2xjlTs/c5KZAeQZIr1dc8j*7fycSmp.JmZocOix3Tmt8R3z*gU!/b/dOB12ZP5DwAA&bo=gAJZA3sEAAYBCI4!&rf=viewer_4" mode="aspectFill"></image>
+    </view>
+    <view class="list">
+      <image src="https://b248.photo.store.qq.com/psb?/V14ATi4j2xjlTs/c5KZAeQZIr1dc8j*7fycSmp.JmZocOix3Tmt8R3z*gU!/b/dOB12ZP5DwAA&bo=gAJZA3sEAAYBCI4!&rf=viewer_4" mode="aspectFill"></image>
+    </view>
+    <view class="list">
+      <image src="https://b248.photo.store.qq.com/psb?/V14ATi4j2xjlTs/c5KZAeQZIr1dc8j*7fycSmp.JmZocOix3Tmt8R3z*gU!/b/dOB12ZP5DwAA&bo=gAJZA3sEAAYBCI4!&rf=viewer_4" mode="aspectFill"></image>
+    </view>
+    <view class="list">
+      <image src="https://b248.photo.store.qq.com/psb?/V14ATi4j2xjlTs/c5KZAeQZIr1dc8j*7fycSmp.JmZocOix3Tmt8R3z*gU!/b/dOB12ZP5DwAA&bo=gAJZA3sEAAYBCI4!&rf=viewer_4" mode="aspectFill"></image>
+    </view>
+  </view>
+</view>

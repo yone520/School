@@ -1,0 +1,20 @@
+<!--pages/my_info_add/index.wxml-->
+<view class="bindingcontent">
+  <view class="bindlist border-b">
+    <text>学生姓名</text>
+    <input maxlength="8" bindinput="changeStyName" value="{{stuName}}" placeholder="请输入学生姓名"></input>
+  </view>
+  <view class="bindlist border-b">
+    <text>身份证号</text>
+    <input maxlength="18" bindinput="changeIdCards" value="{{idCards}}" placeholder="请输入身份证号"></input>
+  </view>
+  <view class="bindlist border-b">
+    <text>所属关系</text>
+    <picker bindchange="bindPickerChange" value="{{item.name}}" range="{{array}}">
+      <input disabled placeholder="请选择" value="{{selectValue}}"></input>
+      <image class="selecting" mode="widthFix" src="/images/icon/to.png"></image>
+    </picker>
+  </view>
+</view>
+
+<view class="cz angular" bindtap="submitBack"><text>确定</text></view>

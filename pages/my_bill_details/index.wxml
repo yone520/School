@@ -1,0 +1,28 @@
+<!--pages/my_bill_details/index.wxml-->
+<view class="content">
+  <view class="bill_det">
+    <view class="top1 border-b">
+      <image mode="widthFix" src="/images/icon/fanka.png"></image>
+      <view class="t1">校园课后服务缴费</view>
+      <view class="t2">-1,000.00</view>
+    </view>
+  </view>
+  <view class="bill_list">
+    <view class="li">
+      <text>报名学生</text>
+      <text>爱德维斯</text>
+    </view>
+    <view class="li">
+      <text>支付时间</text>
+      <text>2017-02-09 12:32:32</text>
+    </view>
+    <view class="li">
+      <text>支付方式</text>
+      <text>微信</text>
+    </view>
+    <view class="li">
+      <text>交易单号</text>
+      <text>12421341234123412</text>
+    </view>
+  </view>
+</view>

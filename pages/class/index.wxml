@@ -1,0 +1,91 @@
+<view wx:if="{{isStudentData}}">
+  <!--pages/class/index.wxml-->
+  <view class="topUser">
+    <view class="avator" bindtap="openWin">
+      <image mode="aspectFill" class="img" src="{{selectStudentObj.headPic}}"></image>
+      <image mode="aspectFill" class="qiehuan"src="/images/icon/default_avator.png"></image>
+    </view>
+    <text class="name">{{selectStudentObj.name}}</text>
+  </view>
+  <view class="classList">
+    <view class="t1"></view>
+    <view class="t2"></view>
+    <view class="t3">
+      <view class="cen">
+        <view class="cent1 border-b">
+          <view>{{selectStudentObj.schoolName}}</view>
+          <view>{{selectStudentObj.gradeName}}</view>
+        </view>
+        <view class="cent2">
+          <view class="center">
+            <view class="l" data-name="class_teacher" bindtap="toPage">
+              <image class="lo" mode="widthFix" src="/images/icon/laos.png"></image>
+              <text class="text">班级老师</text>
+              <image class="to" mode="widthFix" src="/images/icon/to.png"></image>
+            </view>
+            <view class="line"></view>
+            <view class="l" data-name="class_schedule" bindtap="toPage">
+              <image class="lo" mode="widthFix" src="/images/icon/kec.png"></image>
+              <text class="text">班级课程表</text>
+              <image class="to" mode="widthFix" src="/images/icon/to.png"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="dynamic">
+    <view class="tit">班级动态</view>
+    <view class="billcontent">
+      <view class="list border-b" data-name="class_after_class_service" bindtap="toPage">
+        <view class="center">
+          <view class="l1">
+            <image class="l1img" src="/images/icon/default_avator.png"></image>
+            <text class="news"></text>
+          </view>
+          <view class="l2">
+            <view class="l2center">
+              <view>
+                <text>课后服务</text>
+                <text>2019/06/12</text>
+              </view>
+              <view>校园课后服务开始缴费啦</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="select_user" wx:if="{{isWin}}" bindtap="closeWin">
+    <view class="userlist {{item.select ? 'ulistselect':''}}" 
+          wx:for="{{userInfo}}" 
+          wx:key
+          data-id="{{item.id}}"
+          catchtap="chengStudent">
+      <view class="listcenter border-b">
+        <view class="l">
+          <view class="select_avator">
+            <image mode="aspectFill" class="img" src="{{item.headPic}}"></image>
+          </view>
+          <text class="select_name">{{item.name}}</text>
+        </view>
+        <image class="selectimg" mode="widthFix" src="/images/icon/select.png"></image>
+      </view>
+    </view>
+    <!-- <view class="userlist">
+      <view class="listcenter border-b">
+        <view class="l">
+          <view class="select_avator">
+            <image mode="aspectFill" class="img" src="/images/icon/default_avator.png"></image>
+          </view>
+          <text class="select_name">郭亮</text>
+        </view>
+        <image class="selectimg" mode="widthFix" src="/images/icon/select.png"></image>
+      </view>
+    </view> -->
+  </view>
+</view>
+<view wx:if="{{!isStudentData}}">
+  <no-data isshowbottom="{{true}}"></no-data>
+</view>

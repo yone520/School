@@ -1,0 +1,80 @@
+<view wx:if="{{isStudentData}}">
+  <!--pages/index/index.wxml-->
+  <view class="indebg">
+    <view class="topUser">
+      <view class="avator" bindtap="openWin">
+        <image mode="aspectFill" class="img" src="{{selectStudentObj.headPic}}"></image>
+        <image mode="aspectFill" class="qiehuan"src="/images/icon/default_avator.png"></image>
+      </view>
+      <text class="name">{{selectStudentObj.name}}</text>
+    </view>
+    <swiper indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" 
+            interval="{{interval}}" 
+            duration="{{duration}}"
+            indicator-dots="{{true}}"
+            indicator-color="rgba(26, 29, 30, .3)"
+            indicator-active-color="#1A1D1E">
+      <block wx:for="{{imgUrls}}" wx:key>
+        <swiper-item>
+          <image src="{{item.picUrl}}" mode="aspectFill" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- 咨询 -->
+    <view class="indexpadding">
+      <view class="title">益体咨询</view>
+      <!-- 列表 -->
+      <view class="listman border-b" 
+            wx:for="{{newsArr}}" 
+            wx:key="{{index}}">
+        <view class="list" 
+              bindtap="openUrl"
+              data-id="{{item.id}}">
+          <view class="l">
+            <view class="tit">{{item.title}}</view>
+            <view class="det">
+              <text>{{item.author}}</text>
+              <text>{{item.createDate}}</text>
+            </view>
+          </view>
+          <view class="r">
+            <image class="logo" mode="aspectFill" src="{{item.picUrl}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="select_user" wx:if="{{isWin}}" bindtap="closeWin">
+    <view class="userlist {{item.select ? 'ulistselect':''}}" 
+          wx:for="{{userInfo}}" 
+          wx:key
+          data-id="{{item.id}}"
+          catchtap="chengStudent">
+      <view class="listcenter border-b">
+        <view class="l">
+          <view class="select_avator">
+            <image mode="aspectFill" class="img" src="{{item.headPic}}"></image>
+          </view>
+          <text class="select_name">{{item.name}}</text>
+        </view>
+        <image class="selectimg" mode="widthFix" src="/images/icon/select.png"></image>
+      </view>
+    </view>
+    <!-- <view class="userlist">
+      <view class="listcenter border-b">
+        <view class="l">
+          <view class="select_avator">
+            <image mode="aspectFill" class="img" src="/images/icon/default_avator.png"></image>
+          </view>
+          <text class="select_name">郭亮</text>
+        </view>
+        <image class="selectimg" mode="widthFix" src="/images/icon/select.png"></image>
+      </view>
+    </view> -->
+  </view>
+</view>
+<view wx:if="{{!isStudentData}}">
+  <no-data isshowbottom="{{true}}"></no-data>
+</view>

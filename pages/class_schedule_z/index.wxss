@@ -1,0 +1,132 @@
+/* pages/class_schedule/index.wxss */
+.itemlist {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  padding: 0 10rpx;
+}
+
+swiper {
+  height: 140rpx;
+}
+
+.itemlist .tit {
+  color: rgba(26, 29, 30, .5);
+  font-size: 26rpx;
+  min-width: 56rpx;
+  text-align: center;
+}
+
+.andby {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 56rpx;
+  left: 255.67px;
+  color: rgba(26, 29, 30, 1);
+  font-size: 26rpx;
+}
+
+.aaaa {
+  background-color: #E2E2E2;
+}
+
+.itemlist .current {
+  background-color: #19A4FD;
+  color: #fff;
+}
+
+.nsdjsd {
+  height: 100%;
+  padding: 20rpx 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.top1bgc {
+  padding: 0 32rpx;
+}
+
+.datachange {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+
+.datachange .t3 {
+  flex: 1;
+}
+
+.datachange .t1 {
+  color: rgba(26, 29, 30, 1);
+  font-size: 36rpx;
+}
+
+.datachange .t2 {
+  color: rgba(26, 29, 30, .5);
+  font-size: 24rpx;
+  margin: 0 40rpx 0 24rpx;
+}
+
+.datachange .t3 view {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  border: 1rpx solid #19A4FD;
+  left: 240.36px;
+  color: rgba(25, 164, 253, .5);
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.datachange .t4 {
+  display: flex;
+  width: 200rpx;
+  height: 56rpx;
+  overflow: hidden;
+  /* border: 1rpx solid #bbb; */
+}
+
+.datachange .t4 view{
+  flex: 1;
+  height: 100%;
+  color: rgba(26, 29, 30, .5);
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 56rpx;
+}
+
+.datachange .t4 view:first-child {
+  border: 1rpx solid #bbb;
+  border-right: none;
+  border-radius: 12rpx 0 0 12rpx;
+}
+
+.datachange .t4 view:last-child {
+  border: 1rpx solid #bbb;
+  border-left: none;
+  border-radius: 0 12rpx 12rpx 0;
+}
+
+.datachange .t4 view.active {
+  border-color: #19A4FD;
+  background-color: #19A4FD;
+  color: #fff;
+}
+
+.zhouli {
+  display: flex;
+  justify-content: space-around;
+  color: rgba(72, 74, 75, 1);
+  font-size: 28rpx;
+  height: 100rpx;
+  align-items: center;
+  padding: 0 10rpx;
+}
+
+.zhoulist .zhouli:nth-of-type(odd) {
+  background-color: #ffffff;
+}

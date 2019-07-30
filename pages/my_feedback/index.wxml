@@ -1,0 +1,11 @@
+<!--pages/my_feedback/index.wxml-->
+<view class="content">
+  <view class="ul">
+    <view class="li" bindtap="toPage" data-id="{{item.id}}" wx:for="{{helpList}}" wx:key>
+      <view class="cen border-b">
+        <text class="tshow">{{item.title}}</text>
+        <image class="myrs" mode="widthFix" src="/images/icon/to.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

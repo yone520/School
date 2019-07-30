@@ -1,0 +1,36 @@
+<!--pages/my_bill/index.wxml-->
+<view class="billcontent">
+  <view class="list border-b" bindtap="toPage">
+    <view class="center">
+      <image class="l1" src="/images/icon/default_avator.png"></image>
+      <view class="l2">
+        <view class="l2center">
+          <view class="bancontent">
+            <text>刘德华</text>
+            <text class="banzhuren">班主任</text>
+          </view>
+          <view>语文</view>
+        </view>
+      </view>
+      <view class="l3">
+        <image mode="widthFix" src="/images/icon/phone.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="list border-b" bindtap="toPage">
+    <view class="center">
+      <image class="l1" src="/images/icon/default_avator.png"></image>
+      <view class="l2">
+        <view class="l2center">
+          <view class="bancontent">
+            <text>迈克尔</text>
+          </view>
+          <view>数学</view>
+        </view>
+      </view>
+      <view class="l3">
+        <image mode="widthFix" src="/images/icon/phone.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

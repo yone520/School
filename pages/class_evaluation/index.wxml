@@ -1,0 +1,56 @@
+
+
+
+<!--pages/my_help_center/index.wxml-->
+<!-- 输入框 -->
+<view class="top1">
+  <view class="kecmc border-b">足球课-张雪峰老师</view>
+  <view class="pjial">
+    <view class="andj">您对教师满意吗？</view>
+    <view class="xinghao">
+      <image wx:for="{{teacher}}" 
+              mode="widthFix" 
+              data-mark="{{0}}"
+              data-index="{{index}}"
+              wx:key="{{index}}"
+              bindtap="evaluation"
+              src="/images/icon/{{item ? 'liangxinghao' : 'xinghao'}}.png"></image>
+      <text>{{teacherText[teacherIndex]}}</text>
+    </view>
+    <view class="andj">您对课程内容满意吗？</view>
+    <view class="xinghao">
+      <image wx:for="{{course}}" 
+              mode="widthFix" 
+              data-mark="{{1}}"
+              data-index="{{index}}"
+              wx:key="{{index}}"
+              bindtap="evaluation"
+              src="/images/icon/{{item ? 'liangxinghao' : 'xinghao'}}.png"></image>
+      <text>{{courseText[courseIndex]}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="t1">
+  <textarea bindinput="textChange" value="{{val}}" maxlength="500" placeholder="说说您对本次课后服务的评价吧，您的意见是我们前进的动力"></textarea>
+  <view class="ct">{{lenText}}/500</view>
+</view>
+
+<view class="uploadimg">
+  <view class="tit">上传图片(最多9张)</view>
+  <view class="imgcontent">
+    <view class="addimg" 
+          data-index="{{index}}" 
+          bindtap="changeImg" 
+          wx:for="{{adviceImgList}}" 
+          wx:key="{{index}}" 
+          wx:if="{{index <= 9}}">
+      <image mode="aspectFill" wx:if="{{item.url}}" src="{{item.url}}"></image>
+    </view>
+    <view wx:if="{{![1,2,3,4,5,6,7,8].includes(adviceImgList.length) && adviceImgList.length < 9}}" class="addimg" bindtap="selectImg"></view>
+  </view>
+</view>
+
+<view class="submit_sq">
+  <view class="cz angular" bindtap="submitBack">确定</view>
+</view>

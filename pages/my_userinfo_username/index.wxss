@@ -1,0 +1,23 @@
+/* pages/my_userinfo_username/index.wxss */
+.grinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  padding: 0 32rpx;
+  background-color: #ffffff;
+}
+
+.grinfo input {
+  flex: 1;
+}
+
+.grinfo > .text {
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;
+  background-color: #bfbfbf;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1;
+}

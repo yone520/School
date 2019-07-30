@@ -1,0 +1,13 @@
+<!--pages/my_userinfo_username/index.wxml-->
+<view class="grinfo">
+  <input type="text" 
+          value="{{nameVal}}" 
+          maxlength="10" 
+          placeholder="请输入姓名"
+          bindinput="getNameVal"
+          confirm-type="修改"
+          bindconfirm="confirmSub"></input>
+          <view class="text" wx:if="{{nameVal}}" catchtap="aaaaaa">×</view> 
+</view>
+
+<button bindtap="confirmSub">提交</button>

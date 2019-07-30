@@ -1,0 +1,67 @@
+ <view class="top1bgc" style="background: #FAFAFA">
+  <view class="datachange border-b">
+    <view class="t1">{{month}}月</view>
+    <view class="t2">第{{week}}周</view>
+    <view class="t3">
+      <view wx:if="{{clickday != thisday}}" bindtap="backToday">今</view>
+    </view>
+    <view class="t4">
+      <view class="active">日视图</view>
+      <view bindtap="toViewDay">周视图</view>
+    </view>
+  </view>
+ </view>
+  <view class="classtable" style="background: #FAFAFA">
+    <swiper indicator-dots="{{indicatorDots}}"
+      interval="{{interval}}" 
+      duration="{{duration}}"
+      wx:if="{{dataArr.length}}"
+      circular="{{true}}"
+      bindchange="swiperchange"
+      current="{{thiscurrent}}">
+      <block wx:for="{{dataArr}}" wx:key="index">
+        <swiper-item>
+          <view class="itemlist">
+            <view class="nsdjsd" wx:for="{{item}}" wx:for-item="citem" wx:for-index="ind" wx:key="ind">
+                <view class="tit">{{citem.text}}</view>
+                <view data-time="{{citem.time}}" 
+                      bindtap="changeDay" 
+                      data-index="{{index}}"
+                      data-ind="{{ind}}"
+                      class="andby {{citem.isClick ? 'aaaa' : ''}} {{(citem.time == thisday && citem.isClick) ? 'current' : ''}}">{{citem.showTime}}</view>
+              </view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- 列表 -->
+  <view>
+    <view class="parentul">
+      <view class="parentli">
+        <view class="childli">
+          <text>第一节</text>
+          <text>08:00-08:40</text>
+        </view>
+        <view class="childl2i">
+          <text>数</text>
+          <text>数学</text>
+          <text>六2班教室</text>
+          <text>爱德华</text>
+        </view>
+      </view>
+      <view class="parentli">
+        <view class="childli">
+          <text>第一节</text>
+          <text>08:00-08:40</text>
+        </view>
+        <view class="childl2i">
+          <text>数</text>
+          <text>数学</text>
+          <text>六2班教室</text>
+          <text>爱德华</text>
+        </view>
+      </view>
+    </view>
+  </view>

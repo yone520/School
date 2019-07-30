@@ -1,0 +1,22 @@
+<!--pages/class_ofthe/index.wxml-->
+<view class="ofthe">
+  <view class="t1">
+    <view class="t1center border-b">
+      <view>需付金额</view>
+      <view>¥{{orderObject.price}}</view>
+    </view>
+  </view>
+  <view class="colmn">
+    <view class="list">
+      <text>学生姓名</text>
+      <text>{{orderObject.name}}</text>
+    </view>
+    <view class="list">
+      <text>学校名称</text>
+      <text>{{orderObject.schoolName}}</text>
+    </view>
+  </view>
+  <view class="wxpay" bindtap="wxpayfn">
+    微信支付
+  </view>
+</view>

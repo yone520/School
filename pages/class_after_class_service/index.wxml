@@ -1,0 +1,73 @@
+<!--pages/class_after_class_service/index.wxml-->
+<!-- 头部切换 -->
+<!-- <view class="topnav">
+  <view data-id="{{0}}" bindtap="topnavFn" class="{{!navchange ? 'active' : ''}}">动态</view>
+  <view data-id="{{1}}" bindtap="topnavFn" class="{{navchange ? 'active' : ''}}">已缴费</view>
+</view> -->
+
+<view wx:if="{{!navchange}}">
+  <view class="dtul">
+    <view class="dtli" wx:for="{{msglist}}" wx:key>
+      <view class="dtp1">
+        <text>{{item.gradeName}}</text>
+        <text>{{item.time}}</text>
+      </view>
+      <view class="dtp2">
+        {{item.msg}}
+      </view>
+      <view class="dtp4 border-b"></view>
+      <view class="dtp3" data-id="{{item.id}}" data-name="class_after_class_details" bindtap="toPage">
+        <text>查看详情</text>
+        <image mode="widthFix" src="/images/icon/to.png"></image>
+      </view>
+    </view>
+    <!-- <view class="dtli">
+      <view class="dtp1">
+        <text>三年级下学期</text>
+        <text>10:58</text>
+      </view>
+      <view class="dtp2">
+        校园课后服务开始报名缴费啦，点击立即在线缴费
+      </view>
+      <view class="dtp4 border-b"></view>
+      <view class="dtp3">
+        <text>查看详情</text>
+        <image mode="widthFix" src="/images/icon/to.png"></image>
+      </view>
+    </view> -->
+  </view>
+</view>
+
+<view class="ul"wx:if="{{navchange}}">
+  <view class="li border-b" 
+        wx:for="{{msglist}}" 
+        wx:key="{{index}}" 
+        data-id="{{item.id}}" 
+        data-name="{{statusUrl[item.status]}}" 
+        bindtap="toPage">
+    <view class="text">{{item.gradeName}}</view>
+    <view class="biaoji {{statusStyle[item.status]}}">{{statusArr[item.status]}}</view>
+    <image class="to" src="/images/icon/to.png" mode="widthFix"></image>
+  </view>
+
+  <!-- <view class="li border-b" data-name="class_applyfor" bindtap="toPage">
+    <view class="text">2019年上学期</view>
+    <view class="biaoji sq">待申请</view>
+    <image class="to" src="/images/icon/to.png" mode="widthFix"></image>
+  </view>
+  <view class="li border-b" data-name="class_processtobe" bindtap="toPage">
+    <view class="text">2019年上学期</view>
+    <view class="biaoji pk">待排课</view>
+    <image class="to" src="/images/icon/to.png" mode="widthFix"></image>
+  </view>
+  <view class="li border-b" data-name="class_signup" bindtap="toPage">
+    <view class="text">2019年上学期</view>
+    <view class="biaoji bm">待报名</view>
+    <image class="to" src="/images/icon/to.png" mode="widthFix"></image>
+  </view>
+  <view class="li border-b"  data-name="class_signup_success" bindtap="toPage">
+    <view class="text">2019年上学期</view>
+    <view class="biaoji bmcg">报名成功</view>
+    <image class="to" src="/images/icon/to.png" mode="widthFix"></image>
+  </view> -->
+</view>

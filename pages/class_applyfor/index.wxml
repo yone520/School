@@ -1,0 +1,41 @@
+<!--pages/class_applyfor/index.wxml-->
+<view class="pubtitle">
+  学生信息
+</view>
+<view class="billcontent">
+  <view class="list" bindtap="toPage">
+    <view class="center">
+      <view class="l1"> 
+        <image class="l1img" src="/images/icon/default_avator.png"></image>
+      </view>
+      <view class="l2">
+        <view class="l2center">
+          <view>
+            <text>爱德维斯</text>
+          </view>
+          <view>绵阳市实验小学-小学2017级3班</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="pubtitle">
+  请选择需要申请的课程
+</view>
+<view class="sqkec">
+  <view class="ul">
+    <view wx:for="{{kecArr}}" 
+          class="li border-b" 
+          wx:key="{{index}}" 
+          data-index="{{index}}" 
+          bindtap="clickSelect">
+      <text>{{item.name}}</text>
+      <image mode="widthFix" src="/images/icon/{{item.isSelect ? 'select2' : 'noselect'}}.png"></image>
+    </view>
+  </view>
+</view>
+
+<!-- 提交申请 -->
+<view class="submit_sq">
+  <view class="cz angular" bindtap="submitBack"><text>确定</text></view>
+</view>

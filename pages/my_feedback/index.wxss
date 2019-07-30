@@ -1,0 +1,21 @@
+/* pages/my_feedback/index.wxss */
+.content {
+  background-color: #ffffff;
+}
+
+.li {
+  height: 100rpx;
+  padding: 0 32rpx;
+}
+
+.tshow {
+  color: rgba(36, 42, 58, 1);
+  font-size: 32rpx;
+}
+
+.cen {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

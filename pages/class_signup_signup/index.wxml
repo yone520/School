@@ -1,0 +1,125 @@
+<!--pages/class_signup_signup/index.wxml-->
+<view class="main">
+  <!-- 周循环 -->
+  <view class="contentlist"> 
+    <view class="center">
+      <view class="week">
+        星期一
+      </view>
+      <!-- 时间循环 -->
+      <view class="timelist">
+        <view class="w_time">
+          <image class="tierimg" mode="widthFix" src="/images/icon/time.png"></image>
+          <text>16:00-17:00</text>
+        </view>
+        <view class="wli border-b">
+          <!-- 项目循环 -->
+          <text class="name">足球</text>
+          <text class="num">剩余名额20人</text>
+          <text class="baom b1_1">报名</text>
+        </view>
+        <view class="wli">
+          <!-- 项目循环 -->
+          <text class="name">足球</text>
+          <text class="num">剩余名额20人</text>
+          <text class="baom b1_1">报名</text>
+        </view>
+      </view>
+      <view class="timelist">
+        <view class="w_time">
+          <image class="tierimg" mode="widthFix" src="/images/icon/time.png"></image>
+          <text>16:00-17:00</text>
+        </view>
+        <view class="wli border-b">
+          <!-- 项目循环 -->
+          <text class="name">足球</text>
+          <text class="num">剩余名额20人</text>
+          <text class="baom b1_1 b3_1">取消</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="contentlist"> 
+    <view class="center">
+      <view class="week">
+        星期一
+      </view>
+      <!-- 时间循环 -->
+      <view class="timelist">
+        <view class="w_time">
+          <image class="tierimg" mode="widthFix" src="/images/icon/time.png"></image>
+          <text>16:00-17:00</text>
+        </view>
+        <view class="wli border-b">
+          <!-- 项目循环 -->
+          <text class="name">足球</text>
+          <text class="num">剩余名额20人</text>
+          <text class="baom b1_1">报名</text>
+        </view>
+        <view class="wli">
+          <!-- 项目循环 -->
+          <text class="name">足球</text>
+          <text class="num">剩余名额20人</text>
+          <text class="baom b1_1">报名</text>
+        </view>
+      </view>
+      <view class="timelist">
+        <view class="w_time">
+          <image class="tierimg" mode="widthFix" src="/images/icon/time.png"></image>
+          <text>16:00-17:00</text>
+        </view>
+        <view class="wli border-b">
+          <!-- 项目循环 -->
+          <text class="name">足球</text>
+          <text class="num">剩余名额20人</text>
+          <text class="baom b1_1 b3_1">取消</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="contentlist"> 
+    <view class="center">
+      <view class="week">
+        星期一
+      </view>
+      <!-- 时间循环 -->
+      <view class="timelist">
+        <view class="w_time">
+          <image class="tierimg" mode="widthFix" src="/images/icon/time.png"></image>
+          <text>16:00-17:00</text>
+        </view>
+        <view class="wli border-b">
+          <!-- 项目循环 -->
+          <text class="name">足球</text>
+          <text class="num">剩余名额20人</text>
+          <text class="baom b1_1">报名</text>
+        </view>
+        <view class="wli">
+          <!-- 项目循环 -->
+          <text class="name">足球</text>
+          <text class="num">剩余名额20人</text>
+          <text class="baom b1_1">报名</text>
+        </view>
+      </view>
+      <view class="timelist">
+        <view class="w_time">
+          <image class="tierimg" mode="widthFix" src="/images/icon/time.png"></image>
+          <text>16:00-17:00</text>
+        </view>
+        <view class="wli border-b">
+          <!-- 项目循环 -->
+          <text class="name">足球</text>
+          <text class="num">剩余名额20人</text>
+          <text class="baom b1_1 b3_1">取消</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 提交申请 -->
+<view class="submit_sq">
+  <view class="cz angular" bindtap="submitBack"><text>确定</text></view>
+</view>
